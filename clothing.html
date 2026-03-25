@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trendy clothing & dressing shop for men, women, and kids in Telangana. Featuring sarees, kurtis, kids wear, and daily wear.">
+    <title>Trendy Clothing & Dressing Shop | Telangana</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons for sharp, polished visuals -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="clothing-styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-spinner">
+            <i class="ph-bold ph-sketch-logo loader-icon"></i>
+            <span class="loader-text">Boutique</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="ph-fill ph-handbag logo-icon"></i>
+                <span class="logo-text">Style<span class="logo-accent">Store</span></span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#collections" class="nav-link hover-underline-anim">Shop</a>
+                <a href="#why-us" class="nav-link hover-underline-anim">Why Us</a>
+                <a href="#gallery" class="nav-link hover-underline-anim">Lookbook</a>
+                <a href="#how-to-buy" class="nav-link hover-underline-anim">How to Buy</a>
+                <a href="#contact" class="nav-link hover-underline-anim">Visit Us</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+17824924640" class="btn btn-primary nav-btn pulse-glow">
+                    <i class="ph-bold ph-phone"></i> Call Shop
+                </a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- High-quality Indian marriage traditional clothes hero image -->
+        <div class="hero-bg parallax-bg" style="background-image: url('images/hero_wedding.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="wave-bottom"></div>
+        
+        <div class="container hero-content">
+            <div class="stagger-group">
+                <span class="badge fade-in-up"><i class="ph-fill ph-star"></i> Top Rated in Telangana</span>
+                <h1 class="hero-title fade-in-up delay-1">Trendy Dresses & Daily Wear in <span class="text-gradient">Telangana</span></h1>
+                <p class="hero-subtitle fade-in-up delay-2">Sarees, kurtis, mens wear, kids wear – new stock every week.</p>
+                
+                <div class="hero-buttons fade-in-up delay-3">
+                    <a href="#collections" class="btn btn-primary btn-glow bounce-hover">View Women's Collection</a>
+                    <a href="tel:+17824924640" class="btn btn-white slide-hover">Call Shop Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <a href="#collections" class="scroll-indicator fade-in delay-4">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </a>
+    </section>
+
+    <!-- Category Image Grid -->
+    <section class="section categories" id="collections">
+        <div class="container">
+            <div class="section-header fade-in text-center">
+                <span class="section-kicker">Our Collections</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-desc">Big choices for your whole family. Find exactly what you are looking for.</p>
+            </div>
+            
+            <div class="category-grid">
+                <!-- Large Feature 1 -->
+                <a href="#contact" class="cat-card feature-wide reveal-scale">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Women Sarees & Kurtis" class="cat-img zoom-anim">
+                    <div class="cat-overlay"></div>
+                    <div class="cat-info">
+                        <div class="cat-badge">Trending</div>
+                        <h3 class="cat-title">Women – Sarees & Kurtis</h3>
+                        <p class="cat-desc hover-arrow">Tap to see styles <i class="ph-bold ph-arrow-right"></i></p>
+                    </div>
+                </a>
+                
+                <!-- Large Feature 2 -->
+                <a href="#contact" class="cat-card feature-tall reveal-scale delay-1">
+                    <img src="https://images.unsplash.com/photo-1594938291221-94f18cbb5660?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Men Shirts & Jeans" class="cat-img zoom-anim">
+                    <div class="cat-overlay"></div>
+                    <div class="cat-info">
+                        <h3 class="cat-title">Men – Shirts & Jeans</h3>
+                        <p class="cat-desc hover-arrow">Tap to see styles <i class="ph-bold ph-arrow-right"></i></p>
+                    </div>
+                </a>
+                
+                <!-- Small Box 1 -->
+                <a href="#contact" class="cat-card reveal-scale delay-2">
+                    <img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kids Festive Wear" class="cat-img zoom-anim">
+                    <div class="cat-overlay"></div>
+                    <div class="cat-info">
+                        <h3 class="cat-title">Kids – Festive Wear</h3>
+                        <p class="cat-desc hover-arrow">Tap to see styles <i class="ph-bold ph-arrow-right"></i></p>
+                    </div>
+                </a>
+                
+                <!-- Small Box 2 -->
+                <a href="#contact" class="cat-card reveal-scale">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Party & Function Wear" class="cat-img zoom-anim">
+                    <div class="cat-overlay"></div>
+                    <div class="cat-info">
+                        <div class="cat-badge purple-badge">Premium</div>
+                        <h3 class="cat-title">Party & Function Wear</h3>
+                        <p class="cat-desc hover-arrow">Tap to see styles <i class="ph-bold ph-arrow-right"></i></p>
+                    </div>
+                </a>
+                
+                <!-- Small Box 3 -->
+                <a href="#contact" class="cat-card reveal-scale delay-1">
+                    <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Office & Daily Wear" class="cat-img zoom-anim">
+                    <div class="cat-overlay"></div>
+                    <div class="cat-info">
+                        <h3 class="cat-title">Office & Daily Wear</h3>
+                        <p class="cat-desc hover-arrow">Tap to see styles <i class="ph-bold ph-arrow-right"></i></p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-5 fade-in delay-2">
+                <a href="tel:+17824924640" class="btn btn-outline float-anim">See All Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why People Like This Shop -->
+    <section class="section why-us bg-light" id="why-us">
+        <div class="container">
+            <div class="section-header fade-in text-center">
+                <span class="section-kicker">Our Promise</span>
+                <h2 class="section-title">Why people like this shop</h2>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card tilt-glass fade-in-up">
+                    <div class="feature-icon pastel-peach icon-float">
+                        <i class="ph-fill ph-sparkle text-peach"></i>
+                    </div>
+                    <h4 class="feature-title">Top Quality</h4>
+                    <p class="feature-text">Latest designs from Hyderabad & Mumbai markets</p>
+                </div>
+                
+                <div class="feature-card tilt-glass fade-in-up delay-1">
+                    <div class="feature-icon pastel-green icon-float">
+                        <i class="ph-fill ph-users text-green"></i>
+                    </div>
+                    <h4 class="feature-title">Perfect Fit</h4>
+                    <p class="feature-text">Sizes for all family members – from teens to XXL</p>
+                </div>
+                
+                <div class="feature-card tilt-glass fade-in-up delay-2">
+                    <div class="feature-icon pastel-purple icon-float">
+                        <i class="ph-fill ph-check-circle text-purple"></i>
+                    </div>
+                    <h4 class="feature-title">Best Value</h4>
+                    <p class="feature-text">Honest pricing with clear tags, no bargaining needed</p>
+                </div>
+                
+                <div class="feature-card tilt-glass fade-in-up delay-3">
+                    <div class="feature-icon pastel-peach icon-float">
+                        <i class="ph-fill ph-arrows-left-right text-peach"></i>
+                    </div>
+                    <h4 class="feature-title">Easy Returns</h4>
+                    <p class="feature-text">Simple exchange on the same day if sizes don't match</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Lookbook (Scrolling) -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container section-header text-center fade-in">
+            <span class="section-kicker text-peach">New Arrivals</span>
+            <h2 class="section-title text-white">Our Lookbook</h2>
+            <p class="section-desc text-white-70">Swipe to see what's trending.</p>
+        </div>
+        
+        <div class="gallery-container">
+            <!-- Controls for desktop -->
+            <button class="gallery-ctrl prev-ctrl"><i class="ph-bold ph-caret-left"></i></button>
+            <button class="gallery-ctrl next-ctrl"><i class="ph-bold ph-caret-right"></i></button>
+            
+            <div class="gallery-scroll fade-in">
+                <div class="gallery-track">
+                    <div class="gallery-item item-focus">
+                        <img src="https://images.unsplash.com/photo-1583391265698-469076bc38ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Silk Saree">
+                        <div class="gallery-item-overlay"></div>
+                        <div class="gallery-content">
+                            <span class="gallery-caption">New Arrival – Silk Saree</span>
+                            <a href="#contact" class="gallery-link"><i class="ph-bold ph-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-focus">
+                        <img src="https://images.unsplash.com/photo-1593353592817-8e6fa39b56f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mens Casual">
+                        <div class="gallery-item-overlay"></div>
+                        <div class="gallery-content">
+                            <span class="gallery-caption">Mens Casual Collection</span>
+                            <a href="#contact" class="gallery-link"><i class="ph-bold ph-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-focus">
+                        <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kids Festive Set">
+                        <div class="gallery-item-overlay"></div>
+                        <div class="gallery-content">
+                            <span class="gallery-caption">Cute Kids Festive Sets</span>
+                            <a href="#contact" class="gallery-link"><i class="ph-bold ph-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-focus">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Party Dress">
+                        <div class="gallery-item-overlay"></div>
+                        <div class="gallery-content">
+                            <span class="gallery-caption">Elegant Party Dresses</span>
+                            <a href="#contact" class="gallery-link"><i class="ph-bold ph-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-focus">
+                        <img src="https://images.unsplash.com/photo-1583391733958-d25e07fac04f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Designer Kurti">
+                        <div class="gallery-item-overlay"></div>
+                        <div class="gallery-content">
+                            <span class="gallery-caption">Women Designer Kurtis</span>
+                            <a href="#contact" class="gallery-link"><i class="ph-bold ph-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item item-focus">
+                        <img src="https://images.unsplash.com/photo-1594938291221-94f18cbb5660?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mens Ethnic">
+                        <div class="gallery-item-overlay"></div>
+                        <div class="gallery-content">
+                            <span class="gallery-caption">Mens Sharwanis & Ethnic</span>
+                            <a href="#contact" class="gallery-link"><i class="ph-bold ph-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                    <!-- Drag to scroll spacer -->
+                    <div class="gallery-spacer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telangana Shopping Areas -->
+    <section class="section areas-section">
+        <div class="areas-bg-element"></div>
+        <div class="container relative-z">
+            <div class="areas-content slide-in-right">
+                <div class="areas-text">
+                    <span class="badge badge-glow" style="margin-left:0; margin-bottom: 12px;"><i class="ph-fill ph-map-pin"></i> Local Favorites</span>
+                    <h2 class="section-title">We Understand Telangana Trends</h2>
+                    <ul class="areas-list">
+                        <li class="hover-lift">
+                            <div class="area-icon pastel-peach pulse-soft"><i class="ph-bold ph-check text-peach"></i></div> 
+                            <p><strong>Koti & Abids style collections</strong> – right in your neighbourhood.</p>
+                        </li>
+                        <li class="hover-lift delay-1">
+                            <div class="area-icon pastel-green pulse-soft"><i class="ph-bold ph-check text-green"></i></div> 
+                            <p><strong>Ameerpet & Kukatpally casual wear ideas</strong> – daily updates.</p>
+                        </li>
+                        <li class="hover-lift delay-2">
+                            <div class="area-icon pastel-purple pulse-soft"><i class="ph-bold ph-check text-purple"></i></div> 
+                            <p><strong>Warangal, Karimnagar & Khammam</strong> customers already love these designs.</p>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary bounce-hover">Get Directions to our store</a>
+                    </div>
+                </div>
+                <div class="areas-image reveal-image">
+                    <img src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shopping bags and dress" class="parallax-img">
+                    <div class="image-deco deco-1"></div>
+                    <div class="image-deco deco-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="section reviews-section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <span class="section-kicker">Testimonials</span>
+                <h2 class="section-title">Happy Customers</h2>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card glass-card fade-in-up">
+                    <div class="quote-icon bounce-subtle"><i class="ph-fill ph-quotes"></i></div>
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Good quality dresses, reasonable price – from Hyderabad"</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Anitha" class="review-img">
+                        <div>
+                            <h4>Anitha R.</h4>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card glass-card fade-in-up delay-1">
+                    <div class="quote-icon bounce-subtle"><i class="ph-fill ph-quotes"></i></div>
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Nice designs for functions, staff suggestion super – from Warangal"</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Raju" class="review-img">
+                        <div>
+                            <h4>Raju K.</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card glass-card fade-in-up delay-2">
+                    <div class="quote-icon bounce-subtle"><i class="ph-fill ph-quotes"></i></div>
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Size fitting and stitching also very good – from Nizamabad"</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sujatha" class="review-img">
+                        <div>
+                            <h4>Sujatha T.</h4>
+                            <span>Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Brands Marquee (Extra premium effect) -->
+            <div class="brands-marquee fade-in mt-5">
+                <p class="text-center text-charcoal-light mb-4"><strong>Sourcing materials trusted by top weavers</strong></p>
+                <div class="marquee-wrapper">
+                    <div class="marquee-track">
+                        <!-- Abstract designer brand icons for aesthetics -->
+                        <div class="brand-badge"><i class="ph ph-scissors"></i> Premium Handloom</div>
+                        <div class="brand-badge"><i class="ph ph-leaf"></i> 100% Cotton</div>
+                        <div class="brand-badge"><i class="ph ph-drop"></i> Color Fast</div>
+                        <div class="brand-badge"><i class="ph ph-star-four"></i> Zari Work</div>
+                        <div class="brand-badge"><i class="ph ph-shield-check"></i> Quality Tested</div>
+                        <!-- Duplicates for seamless loop -->
+                        <div class="brand-badge"><i class="ph ph-scissors"></i> Premium Handloom</div>
+                        <div class="brand-badge"><i class="ph ph-leaf"></i> 100% Cotton</div>
+                        <div class="brand-badge"><i class="ph ph-drop"></i> Color Fast</div>
+                        <div class="brand-badge"><i class="ph ph-star-four"></i> Zari Work</div>
+                        <div class="brand-badge"><i class="ph ph-shield-check"></i> Quality Tested</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easy How to Buy Steps -->
+    <section class="section steps-section" id="how-to-buy">
+        <div class="steps-bg-shape"></div>
+        <div class="container relative-z">
+            <div class="section-header text-center fade-in">
+                <span class="section-kicker">Simple Process</span>
+                <h2 class="section-title">How to Buy</h2>
+                <p class="section-desc">Shopping with us is very easy in 3 steps.</p>
+            </div>
+            
+            <div class="process-wrapper">
+                <div class="process-line draw-line-anim"></div>
+                <div class="process-grid">
+                    <div class="process-step hover-glow fade-in-up">
+                        <div class="step-blob blob-peach"></div>
+                        <div class="step-icon pastel-peach icon-pulse-delay">
+                            <i class="ph-fill ph-phone-call text-peach"></i>
+                        </div>
+                        <span class="step-number">01</span>
+                        <h3 class="step-title">Contact Us</h3>
+                        <p class="step-text">Call or WhatsApp the shop.</p>
+                    </div>
+                    
+                    <div class="process-step hover-glow fade-in-up delay-1">
+                        <div class="step-blob blob-green"></div>
+                        <div class="step-icon pastel-green icon-pulse-delay" style="animation-delay: 1s;">
+                            <i class="ph-fill ph-image text-green"></i>
+                        </div>
+                        <span class="step-number">02</span>
+                        <h3 class="step-title">Choose Design</h3>
+                        <p class="step-text">See photos & choose designs.</p>
+                    </div>
+                    
+                    <div class="process-step hover-glow fade-in-up delay-2">
+                        <div class="step-blob blob-purple"></div>
+                        <div class="step-icon pastel-purple icon-pulse-delay" style="animation-delay: 2s;">
+                            <i class="ph-fill ph-storefront text-purple"></i>
+                        </div>
+                        <span class="step-number">03</span>
+                        <h3 class="step-title">Get Delivery</h3>
+                        <p class="step-text">Visit store or get home delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="section contact-section bg-light" id="contact">
+        <div class="container">
+            <div class="contact-box glass-morph fade-in">
+                <div class="contact-text">
+                    <span class="section-kicker">Find Us</span>
+                    <h2 class="section-title">Visit Our Shop Today!</h2>
+                    
+                    <div class="address-block hover-lift">
+                        <div class="address-icon"><i class="ph-fill ph-map-pin"></i></div>
+                        <div>
+                            <p class="address-text">
+                                <strong>Near main road, Hyderabad.</strong><br> 
+                                Look for the big glowing signboard!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-actions stagger-group">
+                        <a href="tel:+17824924640" class="btn btn-primary big-contact-btn fill-hover fade-in-left">
+                            <i class="ph-bold ph-phone"></i> <span>Call Now</span>
+                        </a>
+                        <a href="https://wa.me/17824924640" target="_blank" class="btn btn-green big-contact-btn fill-hover fade-in-left delay-1">
+                            <i class="ph-bold ph-whatsapp-logo"></i> <span>WhatsApp Us</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline big-contact-btn fade-in-left delay-2">
+                            <i class="ph-bold ph-navigation-arrow"></i> <span>Get Directions</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Authentic Google Maps Iframe for Hyderabad with custom style layer mimicking -->
+                <div class="map-container reveal-scale">
+                    <div class="map-overlay-effect"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12182.305206344917!2d78.474441!3d17.385044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map-pin-pulse">
+                        <div class="pin-ring"></div>
+                        <i class="ph-fill ph-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-top">
+                <a href="#home" class="logo footer-logo scale-hover">
+                    <i class="ph-fill ph-handbag logo-icon" style="color:var(--peach-accent)"></i>
+                    <span class="logo-text" style="color:var(--white)">Style<span class="logo-accent">Store</span></span>
+                </a>
+                <p class="footer-main-text">Trendy clothing & dressing shop for Telangana families – everyday wear to special events.</p>
+                <div class="footer-socials">
+                    <a href="#" class="float-anim" style="animation-delay: 0s"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="#" class="float-anim" style="animation-delay: 0.2s"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#" class="float-anim" style="animation-delay: 0.4s"><i class="ph-fill ph-youtube-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Style Store. All rights reserved.</p>
+                <div class="credit-box">
+                    <p>Website by TechWebs Automations</p>
+                    <a href="mailto:techwebs.automations@gmail.com" class="footer-co-link hover-underline-anim text-peach-accent">techwebs.automations@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/17824924640" class="whatsapp-float popup-anim" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <script src="clothing-script.js"></script>
+</body>
+</html>
